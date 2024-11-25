@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-wrap">
+<div class="shadow-wrap">
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">Submit</button>
+
+</form>
+</div>
+</div>
+{% endblock %}
